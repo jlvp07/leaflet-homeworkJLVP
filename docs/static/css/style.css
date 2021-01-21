@@ -8,3 +8,36 @@ body,
 html {
   height: 100%;
 }
+
+.legend {
+  padding: 10px;
+  color: #555555;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.legendBlock
+{
+  width: 15px;
+  height: 15px;
+  margin: 0px;
+  display: inline-block;
+  background: blue;
+}
+
+.legendText
+{
+  font-size: 15px;
+  line-height: 15px;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.legend > div
+{
+  margin:0px;
+  padding:0px;
+  height: 15px;
+}
