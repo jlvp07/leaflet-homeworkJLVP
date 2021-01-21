@@ -68,7 +68,12 @@ function makeMap()
             radius: 50000 * (mag/5)
             //radius: 10 ** mag
         }).addTo(mapDiv);
-        circle.bindPopup(mag + "--[" + lat + ", " + lon + "]");
+        circle.bindPopup(
+            "Location: " + quake.properties.place + "<br>"+
+            "Time: " + new Date(quake.properties.time) + "<br>"+
+            "Latitude: " + lat + "<br>"+
+            "Longitude: " + lon + "<br>"+
+            "Magnitude: " + mag + "<br>");
     });
 
     
